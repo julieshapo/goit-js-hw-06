@@ -7,6 +7,7 @@ const ingredients = [
   'Condiments',
 ];
 
+
 function getIngredient(ingredients) {
   let ingredientName = [];
   for (let i = 0; i < ingredients.length; i +=1) {
@@ -47,3 +48,14 @@ sixthItemRef.classList.add('item')
 
 const ingredientsRef = document.querySelector('#ingredients')
 ingredientsRef.append(firstItemRef, secondItemRef, thirdItemRef, forthItemRef, fifthItemRef, sixthItemRef)
+
+
+// АБО ВАРІАНТ ЧЕРЕЗ insertAdjacentHTML
+
+// const ingredientsRef = document.querySelector('#ingredients')
+// console.log(ingredientsRef)
+
+// const markupIngredients = ingredients.map((ingredient) => `<li class='item'>${ingredient}</li>`).join(' ')
+// console.log(markupIngredients)
+
+// ingredientsRef.insertAdjacentHTML('beforeend', markupIngredients)
