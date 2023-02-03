@@ -16,46 +16,47 @@ function getIngredient(ingredients) {
   return ingredientName
 }
 
-const firstItemRef = document.createElement('li')
-console.log(firstItemRef)
-firstItemRef.textContent = ingredients[0]
-firstItemRef.classList.add('item')
+const firstItemEl = document.createElement('li')
+console.log(firstItemEl)
+firstItemEl.textContent = ingredients[0]
+firstItemEl.classList.add('item')
 
-const secondItemRef = document.createElement('li')
-console.log(secondItemRef)
-secondItemRef.textContent = ingredients[1]
-secondItemRef.classList.add('item')
+const secondItemEl = document.createElement('li')
+console.log(secondItemEl)
+secondItemEl.textContent = ingredients[1]
+secondItemEl.classList.add('item')
 
-const thirdItemRef = document.createElement('li')
-console.log(thirdItemRef)
-thirdItemRef.textContent = ingredients[2]
-thirdItemRef.classList.add('item')
+const thirdItemEl = document.createElement('li')
+console.log(thirdItemEl)
+thirdItemEl.textContent = ingredients[2]
+thirdItemEl.classList.add('item')
 
-const forthItemRef = document.createElement('li')
-console.log(forthItemRef)
-forthItemRef.textContent = ingredients[3]
-forthItemRef.classList.add('item')
+const forthItemEl = document.createElement('li')
+console.log(forthItemEl)
+forthItemEl.textContent = ingredients[3]
+forthItemEl.classList.add('item')
 
-const fifthItemRef = document.createElement('li')
-console.log(fifthItemRef)
-fifthItemRef.textContent = ingredients[4]
-fifthItemRef.classList.add('item')
+const fifthItemEl = document.createElement('li')
+console.log(fifthItemEl)
+fifthItemEl.textContent = ingredients[4]
+fifthItemEl.classList.add('item')
 
-const sixthItemRef = document.createElement('li')
-console.log(sixthItemRef)
-sixthItemRef.textContent = ingredients[5]
-sixthItemRef.classList.add('item')
+const sixthItemEl = document.createElement('li')
+console.log(sixthItemEl)
+sixthItemEl.textContent = ingredients[5]
+sixthItemEl.classList.add('item')
 
-const ingredientsRef = document.querySelector('#ingredients')
-ingredientsRef.append(firstItemRef, secondItemRef, thirdItemRef, forthItemRef, fifthItemRef, sixthItemRef)
+const ingredientsEl = document.querySelector('#ingredients')
+ingredientsEl.append(firstItemEl, secondItemEl, thirdItemEl, forthItemEl, fifthItemEl, sixthItemEl)
+
 
 
 // АБО ВАРІАНТ ЧЕРЕЗ insertAdjacentHTML
 
-// const ingredientsRef = document.querySelector('#ingredients')
-// console.log(ingredientsRef)
+// const ingredientsEl = document.querySelector('#ingredients')
+// console.log(ingredientsEl)
 
 // const markupIngredients = ingredients.map((ingredient) => `<li class='item'>${ingredient}</li>`).join(' ')
 // console.log(markupIngredients)
 
-// ingredientsRef.insertAdjacentHTML('beforeend', markupIngredients)
+// ingredientsEl.insertAdjacentHTML('beforeend', markupIngredients)

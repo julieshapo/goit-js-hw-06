@@ -1,22 +1,22 @@
 
-const categoriesRef = document.querySelector('#categories')
+const categoriesEl = document.querySelector('#categories')
 
-console.log(`Number of categories: ${categoriesRef.children.length}`)
+console.log(`Number of categories: ${categoriesEl.children.length}`)
 
-console.log(`${categoriesRef.firstChild.textContent}`)
+console.log(`${categoriesEl.firstChild.textContent}`)
 
-console.log(`Category: ${categoriesRef.firstElementChild.firstElementChild.textContent}`)
-console.log(`Elements: ${categoriesRef.firstElementChild.lastElementChild.children.length}`)
+console.log(`Category: ${categoriesEl.firstElementChild.firstElementChild.textContent}`)
+console.log(`Elements: ${categoriesEl.firstElementChild.lastElementChild.children.length}`)
 
-console.log(`${categoriesRef.firstChild.textContent}`)
+console.log(`${categoriesEl.firstChild.textContent}`)
 
-console.log(`Category: ${categoriesRef.firstElementChild.nextElementSibling.firstElementChild.textContent}`)
-console.log(`Elements: ${categoriesRef.firstElementChild.nextElementSibling.lastElementChild.children.length}`)
+console.log(`Category: ${categoriesEl.firstElementChild.nextElementSibling.firstElementChild.textContent}`)
+console.log(`Elements: ${categoriesEl.firstElementChild.nextElementSibling.lastElementChild.children.length}`)
 
-console.log(`${categoriesRef.firstChild.textContent}`)
+console.log(`${categoriesEl.firstChild.textContent}`)
 
-console.log(`Category: ${categoriesRef.lastElementChild.firstElementChild.textContent}`)
-console.log(`Elements: ${categoriesRef.lastElementChild.lastElementChild.children.length}`)
+console.log(`Category: ${categoriesEl.lastElementChild.firstElementChild.textContent}`)
+console.log(`Elements: ${categoriesEl.lastElementChild.lastElementChild.children.length}`)
 
 
 // АБО РОЗПИСАНИЙ ВАРІАНТ ЗІ ЗМІННИМИ
