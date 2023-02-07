@@ -1,22 +1,38 @@
 
-const categoriesEl = document.querySelector('#categories')
+let categoriesEl = document.querySelectorAll('.item');
 
-console.log(`Number of categories: ${categoriesEl.children.length}`)
+console.log(`Number of categories: ${categoriesEl.length} `);
 
-console.log(`${categoriesEl.firstChild.textContent}`)
+categoriesEl.forEach(item => {
+    
+   console.log(`Category: ${item.firstElementChild.textContent}`);
 
-console.log(`Category: ${categoriesEl.firstElementChild.firstElementChild.textContent}`)
-console.log(`Elements: ${categoriesEl.firstElementChild.lastElementChild.children.length}`)
+   console.log(`Elements: ${item.lastElementChild.children.length}`);
+})
 
-console.log(`${categoriesEl.firstChild.textContent}`)
 
-console.log(`Category: ${categoriesEl.firstElementChild.nextElementSibling.firstElementChild.textContent}`)
-console.log(`Elements: ${categoriesEl.firstElementChild.nextElementSibling.lastElementChild.children.length}`)
 
-console.log(`${categoriesEl.firstChild.textContent}`)
 
-console.log(`Category: ${categoriesEl.lastElementChild.firstElementChild.textContent}`)
-console.log(`Elements: ${categoriesEl.lastElementChild.lastElementChild.children.length}`)
+// СУПЕР-РОЗПИСАНИЙ :)
+
+// const categoriesEl = document.querySelector('#categories')
+
+// console.log(`Number of categories: ${categoriesEl.children.length}`)
+
+// console.log(`${categoriesEl.firstChild.textContent}`)
+
+// console.log(`Category: ${categoriesEl.firstElementChild.firstElementChild.textContent}`)
+// console.log(`Elements: ${categoriesEl.firstElementChild.lastElementChild.children.length}`)
+
+// console.log(`${categoriesEl.firstChild.textContent}`)
+
+// console.log(`Category: ${categoriesEl.firstElementChild.nextElementSibling.firstElementChild.textContent}`)
+// console.log(`Elements: ${categoriesEl.firstElementChild.nextElementSibling.lastElementChild.children.length}`)
+
+// console.log(`${categoriesEl.firstChild.textContent}`)
+
+// console.log(`Category: ${categoriesEl.lastElementChild.firstElementChild.textContent}`)
+// console.log(`Elements: ${categoriesEl.lastElementChild.lastElementChild.children.length}`)
 
 
 // АБО РОЗПИСАНИЙ ВАРІАНТ ЗІ ЗМІННИМИ
