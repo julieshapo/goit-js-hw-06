@@ -14,12 +14,10 @@ function onFormSubmit(event) {
         password
     }
 
-    mail === '' || password === '' ?
+   return mail === '' || password === '' ?
         alert('Всі поля повинні бути заповнені') :
-        console.log(formData)
-    return
-    
-    document.querySelector('.login-form').reset();
+        (console.log(formData),
+    document.querySelector('.login-form').reset());
 }
 
 

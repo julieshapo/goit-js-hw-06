@@ -13,6 +13,6 @@ refs.button.addEventListener('click', onBodyChangeColor)
 function onBodyChangeColor(event) {
   const color = getRandomHexColor();
   refs.body.style.backgroundColor = color;
-  refs.colorName.textContent = refs.body.style.backgroundColor;
+  refs.colorName.textContent = color;
 }
 
